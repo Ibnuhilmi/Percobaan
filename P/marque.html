@@ -1,0 +1,82 @@
+Salah satu bentuk modifikasi tulisan di blog adalah dengan membuat efek teks yang bisa bergerak. Bisa dari kanan ke kiri, atau dari atas ke bawah dan sebaliknya. Teks efek ini disebut marquee, untuk lebih jelasnya pengertian dari Marquee adalah bahasa HTML untuk memberikan efek sebuah kata atau kalimat menjadi berjalan atau bergerak. Marquee ini mempunyai daya tarik tersendiri karena animasi berjalan atau bergeraknya tersebut, selain itu penggunaan marquee ini bisa menghemat tempat pada blog anda.
+
+Misalkan anda mempunyai sebuah widget khusus pertukaran link yang di pasang di sidebar, bila pertukaran link anda sudah mencapai puluhan atau ratusan tentu saja akan membuat sidebar anda menjadi sangat panjang dan yang pasti akan terlihat sangat jelek.
+
+Kekurangan marquee yang baru saya temukan adalah ketika konten atau isi dari marquee melebihi kapasitas (height atau width), sewaktu loading blog belum selesai seluruh isi marquee akan terlihat, dan itu memang cukup mengganggu juga. Berikut beberapa atribut yang bisa digunakan untuk marquee agar terlihat lebih bagus dan cantik
+
+atribut marquee:
+bgcolor: Atribut ini digunakan untuk mengatur background dari text yang akan diberi efek marquee.
+direction: Digunakan untuk mengatur gerakan dari text tersebut (up, down, left right).
+scrollamount: Untuk mengatur kecepatan dari gerakan text (angka dalam px), semakin tinggi angka yang digunakan, maka akan semakin cepat gerakan dari textnya.
+behaviour: Untuk mengatur efek dari gerakannya (slide, scroll, alternate).
+width: Untuk mengatur lebar dari area text nya (dinyatakan dalam px atau %).
+height: Untuk mengatur tinggi dari area text nya (dinyatakan dalam px atau %).
+align: Untuk mengatur posisi (center, left, right).
+onmouseover: Untuk memberhentikan efek ketia disorot(hover) mouse.
+onmouseout: Untuk melanjutkan efek bila mouse sudah tidak menyorot(hover) text.
+
+Sebenarnya masih banyak atribut-atribut lain yang bisa anda gunakan, atribut diatas hanyalah atribut yang sering digunakan. Sekarang kita lihat contoh dari efek-efek marquee ini.
+
+Contoh marquee dari kiri ke kanan
+
+
+  
+Kalian bisa menggeser ke kiri dan kanan
+                                            
+
+<marquee direction="right" scrollamount="2"> Contoh Marquee dari kiri ke kanan </marquee>
+                                            
+
+                                            
+Contoh marquee dari kanan ke kiri
+
+
+  
+Kalian bisa menggeser ke kiri dan kanan
+                                            
+
+<marquee direction="left" scrollamount="2"> Contoh Marquee dari kanan ke kiri </marquee>
+                                            
+
+                                            
+Contoh marquee dari atas ke bawah
+
+
+  
+Kalian bisa menggeser ke kiri dan kanan
+                                            
+
+<marquee direction="down" scrollamount="2" height="100" width="50%"> Contoh Marquee dari atas ke bawah </marquee>
+                                            
+
+                                            
+Contoh marquee dari bawah ke atas
+
+
+  
+Kalian bisa menggeser ke kiri dan kanan
+                                            
+
+<marquee direction="up" scrollamount="2" height="100" width="50%"> Contoh Marquee dari bawah ke atas </marquee>
+                                            
+
+                                            
+Contoh marquee dengan menggunakan background biru dan warna font putih
+
+
+  
+Kalian bisa menggeser ke kiri dan kanan
+                                            
+
+<font color="white"><marquee direction="right" scrollamount="2"bgcolor="blue"> Contoh Marquee dengan menggunakan background biru dan warna font putih </font></marquee>
+                                            
+
+                                            
+Contoh marquee berhenti bergerak ketika di sorot mouse dan bergerak kembali ketika sudah tidak di sorot
+
+
+  
+Kalian bisa menggeser ke kiri dan kanan
+                                            
+
+<marquee direction="down" scrollamount="2" onmouseover="this.stop()"onmouseout="this.start()" height="100"> Contoh marquee berhenti bergerak ketika di sorot mouse dan bergerak kembali ketika sudah tidak di sorot</marquee>

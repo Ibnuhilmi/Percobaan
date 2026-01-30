@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi HTML tentang video</title>
+</head>
+<body>
+
+    <p>
+
+    Bagi seorang pemula, termasuk saya ketika masih belajar HTML & CSS pasti menanyakan hal yang sama. Pasalnya atribut id dan class digunakan untuk menamai tag-tag pada HTML. Lalu apa perbedaan dari keduanya?
+
+    atribut id
+    Atribut id digunakan untuk penamaan elemen HTML yang memiliki karakteristik unik atau berbeda. Tidak boleh ada dua atau lebih elemen yang mempunyai id yang sama. Perhatikan contoh berikut :
+
+    <code>
+    <div id="menu">
+    <ul id="menu">
+        <li>Home</li>
+        <li>Service</li>
+        <li>About</li>
+    </ul>
+    </div>
+    </code>
+                                                
+    Penggunaan atribut id pada contoh di atas adalah SALAH, karena terdapat dua id yang sama, yaitu “menu” pada tag <div> dan <ul>.
+
+    Jadi setiap kali kalian ingin membuat id nama dari id tersebut harus berbeda.
+
+    atribut class
+    Class digunakan untuk penamaan elemen yang memiliki karakteristik atau struktur sama dan dapat digunakan berulang kali dalam markup (Kode HTML). Sebagai contoh, perhatikan kode HTML berikut :
+
+    <code>
+    <div id="menu">
+        <ul>
+            <li class="merah">Home</li>
+            <li>Service</li>
+            <li class="merah">About</li>
+        </ul>
+    </div>
+    </code>
+                                                
+    Pada Kode HTML di atas, saya menggunakan class Merah pada beberapa list item,karena nantinya list item yang memiliki class merah akan diberi warna background merah.
+
+    Kesimpulannya adalah, ketika anda memiliki beberapa elemen dengan karakter atau format yang sama, gunakan class sebagai penamaannya dan Gunakan id untuk elemen yang berbeda dan membutuhkan tanda pengenal lebih spesifik.
+
+    Memahami hubungan child, parent dan siblings
+    Ketika suatu tag memiliki tag atau konten didalamnya maka hubungan antar tag-tag tersebut disebut dengan child-parent dan sibling. Perhatikan contoh berikut :
+
+    <code>
+    <div id="wrapper">
+        <div id="content">
+            <div id="article">
+                <div id="sidebar"></div>
+            </div>
+        </div>
+    </div>
+    </code>
+                                                
+    Dalam contoh kode HTML tersebut :
+
+    1. <div id="wrapper"> disebut Parent, dan tag HTML yang ada di dalamnya disebut dengan Child (<div id="content">).
+    2. Begitu juga dengan <div id="content"> disebut parent untuk <div id="article"> dan <div id="article">,
+    3. dan hubungan antara<div id="article"> dan <div id="sidebar"> disebut dengan sibling, atau saudara.
+
+    </p>
+    
+</body>
+</html>

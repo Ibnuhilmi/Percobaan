@@ -1,0 +1,89 @@
+Untuk menampilkan data dengan tipe tabel dalam HTML, kita bisa menggunakan tag <table></table.
+
+
+  
+Kalian bisa menggeser ke kiri dan kanan
+                                            
+
+<table>
+    <tr></tr>
+</table>
+                                            
+
+                                            
+Sedangkan untuk menentukan banyaknya kolom, tergantung dari banyaknya tag (table data) yang digunakan di dalam tag .
+
+
+  
+Kalian bisa menggeser ke kiri dan kanan
+                                            
+
+<table>
+    <tr>
+        <td>Nama</td>
+        <td>Alamat</td>
+        <td>Hobby</td>
+    </tr>
+</table>
+                                            
+
+                                            
+Untuk menyatukan kolom atau baris (merge-cell) kita tambahkan atribut colspan (untuk merge horizontally-secara horizontal) atau rowspan (untuk merge vertically).
+
+
+  
+Kalian bisa menggeser ke kiri dan kanan
+                                            
+
+<table>
+    <tr>
+        <td rowspan=2>No</td>
+        <td colspan=2>Jenis Kelamin</td>
+        <td rowspan=2>Nama</td>
+    </tr>
+    <tr>
+        <td>Laki-Laki</td>
+        <td>Perempuan</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Laki-Laki</td>
+        <td></td>
+        <td>Raja</td>
+    </tr>
+</table>
+                                            
+
+                                            
+Jika anda tampilkan dalam browser, maka tabel tersebut tidak akan memiliki garis, untuk memberi garis pada tabel anda dapat menambahkan atribut border=1 pada tag <table> atau anda dapat menambahkan border lewat CSS nantinya.
+
+Structur table yang dianjurkan
+Agar format tabel sesuai dengan ketentuan, Anda dapat menggunakan tag <thead> untuk baris yang menjadi Judul tabel, <tbody> untuk data atau isi dari tabel dan <tfooter> untuk kaki tabel (bisa diisi sama dengan thead atau lainnya).
+
+
+  
+Kalian bisa menggeser ke kiri dan kanan
+                                            
+
+<table border=1>
+    <thead>
+        <tr>
+            <td rowspan=2>No</td>
+            <td colspan=2>Jenis Kelamin</td>
+            <td rowspan=2>Nama</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td>P</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>L</td>
+            <td></td>
+            <td>Raja</td>
+        </tr>
+    </tbody>
+</table>

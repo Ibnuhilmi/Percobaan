@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi HTML tentang form</title>
+</head>
+<body>
+
+    <p>
+
+    Dalam sebuah website biasanya terdapat satu atau lebih form, seperti form pencarian, registrasi dan lain sebagainya. Form ini biasa digunakan untuk mengumpulkan data dari pengunjung website.
+
+    Sebuah form, boleh jadi memiliki beragam kontrol, mulai dari text input, Combo box, Button dan lain sebagainya. Kita akan mempelajari sebagian kontrol yang disebutkan diatas karena kontrol di atas adalah yang paling sering digunakan dalam halaman web.
+
+    Pertama-tama, pembuatan sebuah form diawali dengan tag <form>, dan setiap kontrol-kontrol yang dibutuhkan ditempatkan di dalam tag ini.
+
+    Text Field
+    Elemen form yang digunakan untuk memasukan teks (huruf dan angka) dalam satu baris. Lebar karakter defaultnya adalah 20 karakter, namun bisa kita ubah sesuai keinginan kita.
+    Penulisan : <input type="text" />
+
+    Atribut:
+    name: nama dari text field.
+    id: id dari text field, isinya bisa sama dengan nama.
+    maxlength: maksimal panjang karakter yang bisa diinput.
+    readonly: tekxt field hanya bisa dibaca, tidak bisa diinput, tapi bisa diklik.
+    disabled: tekxt field hanya bisa dibaca, tidak bisa diinput, dan tidak bisa diklik.
+    placeholder: diisi dengan petunjuk atau fungsi dari text field, akan muncul dengan warna yang samar pada text field tersebut.
+
+
+    
+    Kalian bisa menggeser ke kiri dan kanan
+                                                
+
+    <form name="form1">
+    nama Depan : <input type="text" name="nmdpn" maxlength="30" placeholder="nama depan anda"/><br/>
+    nama Belakang :< input type="text" name="nmblk" maxlength="30"  placeholder="nama belakang anda"/>
+    </form>
+                                                
+
+                                                
+    Password Field
+    Elemen form yang digunakan untuk memasukan teks password dalam satu baris. Karakter yang kita ketik akan muncul dalam bentuk titik-titik atau bulatan-bulatan hitam. Lebar karakter defaultnya adalah 20 karakter, nameun bisa kita ubah sesuai keinginan kita.
+    Penulisan : <input type="password">
+
+    Atribut:
+    name: nama dari password field
+    id: id dari password field, isinya bisa sama dengan name
+    maxlength: maksimal panjang karakter yang bisa diinput
+    placeholder: diisi dengan petunjuk, akan muncul dengan warna yang samar pada password field tersebut sebelum password diisi.
+
+    Struktur penulisan password field :
+
+
+    
+    Kalian bisa menggeser ke kiri dan kanan
+                                                
+
+    <form name="form1">
+    Password : <input type="password" name="pwd" maxlength="10" placeholder="masukkan password"/>
+    </form>
+                                                
+
+                                                
+    List Dropdown
+    Elemen form yang digunakan untuk daftar / list dalam bentuk drop down. Ada 2 tag yang digunakan yaitu <select> untuk mendefinisilan drop down list dan <option> untuk mendefinisikan isinya.
+    Penulisan : <select ><option> isi </option></select>
+
+    Atribut:
+    name: nama dari drop down list (atribut dari tag select).
+    id: id dari drop down list (atribut dari tag select).
+    value: isi pilihan dari drop down list (atribut dari option).
+
+    Contoh code:
+
+
+    
+    Kalian bisa menggeser ke kiri dan kanan
+                                                
+
+    <form name="form1">Jurusan :
+    <select name="Jurusan" id="jurusan">
+        <option value="TKJ">Teknik Komputer Jaringan</option>
+        <option value="TSM">Teknik Sepeda Motor</option>
+        <option value="RPL">Rekayasa Perangkat Lunak</option>
+        <option value="AP">Administrasi Perkantoran</option>
+    </select>
+    </form>
+                                                
+
+                                                
+    Text Area
+    Elemen form yang digunakan untuk memasukan teks (huruf dan angka) lebih dari satu baris.
+    Penulisan : <textarea>
+
+    Atribut:
+    name: nama dari text area.
+    id: id dari text area, isinya bisa sama dengan name.
+    cols: maksimal panjang karakter yang bisa diinput.
+    rows: maksimal baris yang bisa diinput.
+    readonly: textarea hanya bisa dibaca, tidak bisa diinput, tapi bisa diklik.
+    disabled: textarea hanya bisa dibaca, tidak bisa diinput, dan tidak bisa diklik.
+    placeholder: diisi dengan petunjuk atau fungsi dari textarea, akan muncul dengan warna yang samar pada text field tersebut.
+
+    Contoh code:
+
+
+    
+    Kalian bisa menggeser ke kiri dan kanan
+                                                
+
+    <textarea name="pesan " id="pesan " rows="4 " cols="50 ">
+    </textarea>
+                                                
+
+                                                
+    Radio Button
+    Elemen form yang digunakan untuk menentukan satu pilihan di antara beberapa pilihan yang disediakan.
+    Penulisan : <input type="radio">
+
+    Atribut:
+    name: nama dari radio button.
+    id: id dari radio button, isinya bisa sama dengan name.
+    value: nilai dari radio button.
+    checked: memberikan tanda pilihan pada salah satu radio button.
+    disabled: radio button hanya ditampilkan, tidak bisa diinput dan tidak bisa diklik.
+
+    Contoh code:
+
+
+    
+    Kalian bisa menggeser ke kiri dan kanan
+                                                
+
+    <form name="form1">Jurusan yang dipilih :<br>
+        <input type="radio" name="myRadio" id="myRadio" value="TKJ" checked="checked">Teknik Komputer Jaringan <br>
+        <input type="radio" name="myRadio" id="myRadio" value="TSM">Teknik Sepeda Motor <br>
+        <input type="radio" name="myRadio" id="myRadio" value="RPL">Rekayasa Perangkat Lunak <br>
+        <input type="radio" name="myRadio" id="myRadio" value="AP">Administrasi Perkantoran <br>
+    </form>
+                                                
+
+                                                
+    Checkbox
+    Elemen form yang digunakan untuk menentukan beberapa pilihan atau semua di antara semua pilihan pilihan yang disediakan.
+    Penulisan : <input type="checkbox">
+
+    Atribut:
+    name: nama dari checkbox.
+    id: id dari checkbox, isinya bisa sama dengan name.
+    value: nilai dari checkbox.
+    checked: memberikan tanda pilihan pada salah satu checkbox.
+    disabled: checkbox hanya ditampilkan, tidak bisa diinput dan tidak bisa diklik.
+
+    Contoh code:
+
+
+    
+    Kalian bisa menggeser ke kiri dan kanan
+                                                
+
+    <form name="form1">Mata Pelajaran :<br>
+        <input type="checkbox" name="mp" id="mp" value="PW" checked="checked">Pemrograman Web <br>
+        <input type="checkbox" name="mp" id="mp" value="JD">Jaringan Dasar <br>
+        <input type="checkbox" name="mp" id="mp" value="SO">Sistem Operasi <br>
+        <input type="checkbox" name="mp" id="mp" value="PK">Perakitan Komputer <br>
+    </form>
+        
+    </p>
+    
+</body>
+</html>

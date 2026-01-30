@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi HTML tentang video</title>
+</head>
+<body>
+
+    <p>
+    Untuk memuat video ke dalam website kita memerlukan tag <video> akan tetapi jika browser tidak mendukung tag <video> kita bisa menambahkan tag <source> didalamnya. Didalam tag <source> kita masukan atribut src dan juga type dari video yang kalian masukkan.
+    Cara pertama:
+          
+    <code>
+    <video src="html/video/yourVideo.mp4"></video>
+    </code>
+                                                
+    Cara kedua:
+                                
+    <code>
+    <video>
+        <source src="html/video/yourVideo.mp4" type="video/mp4">
+        <source src="html/video/yourVideo.webm" type="video/webm">
+    </video>
+    </code>                                    
+
+    Pada tag <code><video></code> terdapat beberapa atribut video yaitu:
+    - autoplay true/false Agar video diputar otomatis.
+    - controls true/false Untuk mengaktifkan control video player.
+    - loop true/false Untuk memutar video terus menerus.
+    - mutedtrue/false Untuk menonaktifkan audio.
+    - poster Image Path Untuk menentukan gambar cover dari video.
+    - width & height angka Untuk menentukan tinggi dan lebar video.
+    - playsinline true/false Untuk memutar video secara 'inline'.
+
+    dengan menggabungkan beberapa atribut tersebut kalian juga bisa menjadikan video (durasi yang sebentar) sebagai gif
+                                             
+    <code>
+    <video autoplay loop muted playsinline>
+        <source src="html/video/yourVideo.mp4" type="video/webm">
+        <source src="html/video/yourVideo.mp4" type="video/mp4">
+    </video>
+    </code>
+    
+    </p>
+    
+</body>
+</html>

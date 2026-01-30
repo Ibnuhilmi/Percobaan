@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi HTML tentang Image</title>
+</head>
+<body>
+
+    <p>
+    Setiap tag HTML dapat memiliki satu atau lebih atribut, atribut ini berfungsi untuk menyimpan informasi yang berkaitan dengan tag tersebut. Pada tag <code><img></code> kalian akan menggunakan atribut src untuk mengambil lokasi penyimpanan image yang akan ditampilkan.
+
+    <code></code><img src=""></code>
+    Dapat dilihat kalian sudah memiliki atribut src dimana atribut src akan kalian arahkan ke tempat lokasi image disimpan atau kalian juga bisa menempatkan link url image jika ingin mengambil dari document eksternal.
+
+    Dan pada tag <code><img></code> kalian tidak perlu menggunakan tag penutupnya </img>
+
+    Tutorial memuat image
+    Setelah kalian memahami tag <code><img></code> tersebut sekarang waktunya kalian mencobanya:
+
+    1. buatlah folder yang didalamnya terdapat image, file html.
+    2. pastikan kalian mengingat tempat lokasi image-nya misalkan (lokasi: html/img/yourImage.jpg).
+    3. code HTML:
+
+    <code>
+        <!DOCTYPE HTML>
+        <HTML>
+        <head>
+        <title>Judul File HTML</title>
+        </head>
+
+        <body>
+        <p>ini adalah contoh pemuatan gambar pada file HTML<p>
+        <img src="html/img/yourImg.png" width="200px">
+        </body>
+        </HTML>
+    </code>
+                    
+    Hasilnya:
+
+    image.png
+    Atribut optional img
+    Setiap tag img, selain memiliki atribut src untuk menyimpan lokasi gambar, anda juga harus menyertakan atribut alt yang akan digunakan sebagai teks alternatif ketika gambar tidak berhasil dimuat atau gambar hilang.
+
+    <code>
+    <img src="html/img/yourImg.png" alt="Ini adalah Teks Alternatif" width="200px">
+    </code>
+                    
+    Dan atribut lainnya adalah atribut width dan height, yang berfungsi untuk menentukan lebar dan tinggi dari gambar tersebut. Memang hal ini tidak perlu dilakukan karena gambar secara otomatis akan terload dengan ukuran sebenarnya, namun hal ini sangat dianjurkan untuk mempercepat proses pemuatan gambar.
+
+    tetapi sangat disarankan lebih baik kalian jika ingin menggunakan atribut width dan height pilihlah salah satunya saja seperti code diatas hal itu dilakukan agar gambar kalian tampil responsive.
+    </p>
+
+</body>
+</html>
