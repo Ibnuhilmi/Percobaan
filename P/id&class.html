@@ -14,15 +14,14 @@
     atribut id
     Atribut id digunakan untuk penamaan elemen HTML yang memiliki karakteristik unik atau berbeda. Tidak boleh ada dua atau lebih elemen yang mempunyai id yang sama. Perhatikan contoh berikut :
 
-    <code>
-    <div id="menu">
-    <ul id="menu">
-        <li>Home</li>
-        <li>Service</li>
-        <li>About</li>
-    </ul>
+
+    <div id="navbar">
+        <ul class="menu">
+            <li>Home</li>
+            <li>Service</li>
+            <li>About</li>
+        </ul>
     </div>
-    </code>
                                                 
     Penggunaan atribut id pada contoh di atas adalah SALAH, karena terdapat dua id yang sama, yaitu “menu” pada tag <div> dan <ul>.
 
@@ -33,7 +32,7 @@
 
     <code>
     <div id="menu">
-        <ul>
+        <ul id="Menu">
             <li class="merah">Home</li>
             <li>Service</li>
             <li class="merah">About</li>
